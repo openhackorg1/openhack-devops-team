@@ -50,6 +50,16 @@ jobs:
       - name: .NET test
         run: dotnet test --no-restore --verbosity normal apis/poi/tests/UnitTests /p:CollectCoverage=true /p:CoverletOutput=lcov/ /p:CoverletOutputFormat=lcov
 
+      
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: apis/poi/tests/lcov/coverage.info
+          base-path: apis/poi
+          flag-name: Unit
+
       - name: failed job 
         uses: actions/github-script@0.9.0
         if: failure()
@@ -62,14 +72,6 @@ jobs:
               repo: context.repo.repo,
               title: "${{ env.build_name }} Workflow ${{ github.run_number }} Failed! ",
               body: body
-
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: apis/poi/tests/lcov/coverage.info
-          base-path: apis/poi
-          flag-name: Unit
 
      
       
