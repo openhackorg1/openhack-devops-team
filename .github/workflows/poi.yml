@@ -39,7 +39,7 @@ jobs:
         run: dotnet add package coverlet.msbuild
 
       - name: Install dependencies
-        run:  dotnet restore apis/poi/*.csproj
+        run:  dotnet restore apis/poi/web/*.csproj
 
       - name: .NET Build web
         run: dotnet build --configuration Release --no-restore apis/poi/web/*.csproj
