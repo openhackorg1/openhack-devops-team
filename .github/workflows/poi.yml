@@ -38,25 +38,25 @@ jobs:
         working-directory: apis/poi/tests/UnitTests
         run: dotnet add package coverlet.msbuild
 
-        - name: Install dependencies
-          run:  dotnet restore apis/poi/*.csproj
+      - name: Install dependencies
+        run:  dotnet restore apis/poi/*.csproj
 
-        - name: .NET Build web
-          run: dotnet build --configuration Release --no-restore apis/poi/web/*.csproj
+      - name: .NET Build web
+        run: dotnet build --configuration Release --no-restore apis/poi/web/*.csproj
 
-        - name: .NET Build unit tests
-          run:  dotnet build --configuration Release --no-restore apis/poi/tests/UnitTests/UnitTests.csproj
+      - name: .NET Build unit tests
+        run:  dotnet build --configuration Release --no-restore apis/poi/tests/UnitTests/UnitTests.csproj
 
-        - name: .NET test
-          run: dotnet test --no-restore --verbosity normal apis/poi/tests/UnitTests /p:CollecCoverage=true /p:CoverletOutputFormat=lcov
+      - name: .NET test
+        run: dotnet test --no-restore --verbosity normal apis/poi/tests/UnitTests /p:CollecCoverage=true /p:CoverletOutputFormat=lcov
 
-        - name: Coveralls
-          uses: Coverallsapp/github-action@master
-          with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
-            path-to-lcov: apis/poi/tests/lcov/coverage.info
-            base-path: apis/poi
-            flag-name: Unit
+      - name: Coveralls
+        uses: Coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: apis/poi/tests/lcov/coverage.info
+          base-path: apis/poi
+          flag-name: Unit
              
             
 
