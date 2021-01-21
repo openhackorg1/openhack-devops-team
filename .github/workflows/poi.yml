@@ -69,8 +69,6 @@ jobs:
               repo: context.repo.repo,
               title: "${{ env.build_name }} Workflow ${{ github.run_number }} Failed! ",
               body: body
-               
-      - name: The job has failed
       
 
       
