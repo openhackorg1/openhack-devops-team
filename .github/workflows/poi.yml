@@ -48,10 +48,10 @@ jobs:
         run:  dotnet build --configuration Release --no-restore apis/poi/tests/UnitTests/UnitTests.csproj
 
       - name: .NET test
-        run: dotnet test --no-restore --verbosity normal apis/poi/tests/UnitTests /p:CollectCoverage=true /p:CoverletOutputFormat=lcov
+        run: dotnet test --no-restore --verbosity normal apis/poi/tests/UnitTests /p:CollectCoverage=true /p:CoverletOutput=lcov/ /p:CoverletOutputFormat=lcov
 
       - name: Coveralls
-        uses: Coverallsapp/github-action@master
+        uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path-to-lcov: apis/poi/tests/lcov/coverage.info
