@@ -35,7 +35,7 @@ jobs:
           dotnet-version: '2.1.0'
 
       - name: Add code coverage tools
-        working-directory: apis/poi/tests/unitTests
+        working-directory: apis/poi/tests/UnitTests
         run: dotnet add package coverlet.msbuild
 
         - name: Install dependencies
@@ -45,7 +45,7 @@ jobs:
           run: dotnet build --configuration Release --no-restore apis/poi/web/*.csproj
 
         - name: .NET Build unit tests
-          run:  dotnet build --configuration Release --no-restore apis/poi/tests/unitTests/UnitTests.csproj
+          run:  dotnet build --configuration Release --no-restore apis/poi/tests/UnitTests/UnitTests.csproj
 
         - name: .NET test
           run: dotnet test --no-restore --verbosity normal apis/poi/tests/UnitTests /p:CollecCoverage=true /p:CoverletOutputFormat=lcov
