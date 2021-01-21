@@ -27,6 +27,8 @@ jobs:
   build_and_test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         with:
@@ -62,7 +64,7 @@ jobs:
               body: body
 
       - name: Coveralls
-      - uses: coverallsapp/github-action@master
+        uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path-to-lcov: apis/poi/tests/UnitTests/lcov/coverage.info
