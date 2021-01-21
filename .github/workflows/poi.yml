@@ -32,7 +32,7 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '2.1.0'
+          dotnet-version: '2.1'
 
       - name: Add code coverage tools
         working-directory: apis/poi/tests/UnitTests
