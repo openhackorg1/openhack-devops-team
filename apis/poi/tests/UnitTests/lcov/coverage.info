@@ -1,0 +1,285 @@
+SF:C:\Sagar\External Events\OpenHack-Jan-2021\Git\openhack-devops-team\apis\poi\web\Program.cs
+FN:15,System.Void poi.Program::Main(System.String[])
+FNDA:0,System.Void poi.Program::Main(System.String[])
+DA:16,0
+DA:18,0
+DA:20,0
+FN:21,Microsoft.AspNetCore.Hosting.IWebHost poi.Program::BuildWebHost(System.String[])
+FNDA:0,Microsoft.AspNetCore.Hosting.IWebHost poi.Program::BuildWebHost(System.String[])
+DA:22,0
+DA:24,0
+DA:25,0
+FN:26,Microsoft.AspNetCore.Hosting.IWebHostBuilder poi.Program::CreateWebHostBuilder(System.String[])
+FNDA:0,Microsoft.AspNetCore.Hosting.IWebHostBuilder poi.Program::CreateWebHostBuilder(System.String[])
+DA:27,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:56,0
+DA:58,0
+LF:34
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Sagar\External Events\OpenHack-Jan-2021\Git\openhack-devops-team\apis\poi\web\Startup.cs
+FN:27,Microsoft.Extensions.Configuration.IConfiguration poi.Startup::get_Configuration()
+FNDA:0,Microsoft.Extensions.Configuration.IConfiguration poi.Startup::get_Configuration()
+DA:28,0
+FN:32,System.Void poi.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:0,System.Void poi.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+FN:52,System.Void poi.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)
+FNDA:0,System.Void poi.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:60,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:76,0
+DA:77,0
+BRDA:54,9,0,0
+BRDA:54,9,1,0
+FN:22,System.Void poi.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,System.Void poi.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+LF:37
+LH:0
+BRF:2
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:C:\Sagar\External Events\OpenHack-Jan-2021\Git\openhack-devops-team\apis\poi\web\Utility\POIConfiguration.cs
+FN:12,System.String poi.Utility.POIConfiguration::GetConnectionString(Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,System.String poi.Utility.POIConfiguration::GetConnectionString(Microsoft.Extensions.Configuration.IConfiguration)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:19,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:26,0
+DA:27,0
+FN:29,System.String poi.Utility.POIConfiguration::GetUri(Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,System.String poi.Utility.POIConfiguration::GetUri(Microsoft.Extensions.Configuration.IConfiguration)
+DA:30,0
+DA:31,0
+DA:32,0
+DA:34,0
+DA:35,0
+BRDA:34,56,0,0
+BRDA:34,56,1,0
+BRDA:34,73,0,0
+BRDA:34,73,1,0
+LF:17
+LH:0
+BRF:4
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Sagar\External Events\OpenHack-Jan-2021\Git\openhack-devops-team\apis\poi\web\Models\BaseDataObject.cs
+FN:8,System.String poi.Models.BaseDataObject::get_Id()
+FNDA:0,System.String poi.Models.BaseDataObject::get_Id()
+DA:9,0
+FN:10,System.Void poi.Models.BaseDataObject::.ctor()
+FNDA:0,System.Void poi.Models.BaseDataObject::.ctor()
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+LF:5
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Sagar\External Events\OpenHack-Jan-2021\Git\openhack-devops-team\apis\poi\web\Models\Healthcheck.cs
+FN:13,System.String poi.Models.Healthcheck::get_Message()
+FNDA:3,System.String poi.Models.Healthcheck::get_Message()
+DA:14,3
+FN:16,System.String poi.Models.Healthcheck::get_Status()
+FNDA:3,System.String poi.Models.Healthcheck::get_Status()
+DA:17,3
+FN:7,System.Void poi.Models.Healthcheck::.ctor()
+FNDA:2,System.Void poi.Models.Healthcheck::.ctor()
+DA:8,2
+DA:9,2
+DA:10,2
+DA:11,2
+DA:12,2
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:3
+FNH:3
+end_of_record
+SF:C:\Sagar\External Events\OpenHack-Jan-2021\Git\openhack-devops-team\apis\poi\web\Models\POI.cs
+FN:16,System.String poi.Models.POI::get_TripId()
+FNDA:0,System.String poi.Models.POI::get_TripId()
+DA:17,0
+FN:17,System.Double poi.Models.POI::get_Latitude()
+FNDA:0,System.Double poi.Models.POI::get_Latitude()
+DA:18,0
+FN:18,System.Double poi.Models.POI::get_Longitude()
+FNDA:0,System.Double poi.Models.POI::get_Longitude()
+DA:19,0
+FN:19,poi.Models.POIType poi.Models.POI::get_PoiType()
+FNDA:0,poi.Models.POIType poi.Models.POI::get_PoiType()
+DA:20,0
+FN:20,System.DateTime poi.Models.POI::get_Timestamp()
+FNDA:0,System.DateTime poi.Models.POI::get_Timestamp()
+DA:21,0
+FN:21,System.Boolean poi.Models.POI::get_Deleted()
+FNDA:0,System.Boolean poi.Models.POI::get_Deleted()
+DA:22,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:C:\Sagar\External Events\OpenHack-Jan-2021\Git\openhack-devops-team\apis\poi\web\Data\POIContext.cs
+FN:12,Microsoft.EntityFrameworkCore.DbSet`1<poi.Models.POI> poi.Data.POIContext::get_POIs()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<poi.Models.POI> poi.Data.POIContext::get_POIs()
+DA:13,0
+FN:7,System.Void poi.Data.POIContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<poi.Data.POIContext>)
+FNDA:0,System.Void poi.Data.POIContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<poi.Data.POIContext>)
+DA:8,0
+DA:9,0
+DA:11,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Sagar\External Events\OpenHack-Jan-2021\Git\openhack-devops-team\apis\poi\web\Controllers\HealthcheckController.cs
+FN:28,Microsoft.AspNetCore.Mvc.IActionResult poi.Controllers.HealthCheckController::Get()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult poi.Controllers.HealthCheckController::Get()
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+FN:20,System.Void poi.Controllers.HealthCheckController::.ctor(Microsoft.Extensions.Logging.ILogger`1<poi.Controllers.HealthCheckController>)
+FNDA:0,System.Void poi.Controllers.HealthCheckController::.ctor(Microsoft.Extensions.Logging.ILogger`1<poi.Controllers.HealthCheckController>)
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+LF:8
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Sagar\External Events\OpenHack-Jan-2021\Git\openhack-devops-team\apis\poi\web\Controllers\POIController.cs
+FN:23,System.Collections.Generic.List`1<poi.Models.POI> poi.Controllers.POIController::GetAll()
+FNDA:0,System.Collections.Generic.List`1<poi.Models.POI> poi.Controllers.POIController::GetAll()
+DA:24,0
+DA:25,0
+DA:26,0
+FN:30,Microsoft.AspNetCore.Mvc.IActionResult poi.Controllers.POIController::GetById(System.String)
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult poi.Controllers.POIController::GetById(System.String)
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+BRDA:33,34,0,0
+BRDA:33,34,1,0
+FN:42,Microsoft.AspNetCore.Mvc.IActionResult poi.Controllers.POIController::GetByTripId(System.String)
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult poi.Controllers.POIController::GetByTripId(System.String)
+DA:43,0
+DA:44,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:50,0
+DA:51,0
+BRDA:46,135,0,0
+BRDA:46,135,1,0
+FN:54,Microsoft.AspNetCore.Mvc.IActionResult poi.Controllers.POIController::CreatePoi(poi.Models.POI)
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult poi.Controllers.POIController::CreatePoi(poi.Models.POI)
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:60,0
+DA:62,0
+FN:15,System.Void poi.Controllers.POIController::.ctor(poi.Data.POIContext)
+FNDA:0,System.Void poi.Controllers.POIController::.ctor(poi.Data.POIContext)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+LF:27
+LH:0
+BRF:4
+BRH:0
+FNF:5
+FNH:0
+end_of_record
