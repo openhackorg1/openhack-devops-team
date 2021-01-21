@@ -54,10 +54,9 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: lcov/coverage.info
+          path-to-lcov: tests/lcov/coverage.info
           base-path: apis/poi
           flag-name: Unit
-          working-directory: apis/poi/tests/UnitTests
              
             
 
