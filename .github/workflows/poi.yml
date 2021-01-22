@@ -74,9 +74,8 @@ jobs:
             login-server: openhackgoa9se38acr.azurecr.io
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
-
       - run: |
-          docker build . -t openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}
+          docker build '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' -t openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}
           docker push openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }} 
       
 
