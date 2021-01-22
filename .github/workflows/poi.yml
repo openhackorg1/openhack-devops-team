@@ -72,16 +72,22 @@ jobs:
             password: ${{ secrets.REGISTRY_PASSWORD }}
       - run: |
           docker build '${{ env.docker_path }}' -t openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}
-          docker push openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }} 
+          docker push openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}
+
+      - uses: azure/webapps-deploy@v2
+        with:
+          app-name: '${{ env.webapp_name }}'
+          publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+          images: 'openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}'
+          slot-name: 'staging'
+
+
       
 
       
 
        
-    
-
-
-
+ 
 
       
 
