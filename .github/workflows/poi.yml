@@ -80,15 +80,14 @@ jobs:
           publish-profile: ${{ secrets.azureWebAppPublishProfile }}
           images: 'openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}'
           slot-name: 'staging'
+
+
       
 
       
 
        
-    
-
-
-
+ 
 
       
 
