@@ -81,7 +81,7 @@ jobs:
           publish-profile: ${{ secrets.AZUREWEBAPPPUBLISHPROFILESTAGING }}
           images: 'openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}'
           slot-name: staging
-          #test comment
+          #test comments 2
 
        
  
