@@ -11,7 +11,6 @@ env:
   webapp_name: openhackgoa9se38poi
   build_name: POI
   AZURE_WEBAPP_PACKAGE_PATH: '.'
-  web_app_name_staging: 
 
 on:
   push:
