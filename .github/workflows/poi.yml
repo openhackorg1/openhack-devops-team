@@ -10,6 +10,7 @@ env:
   resource_group: openhackgoa9se38rg
   webapp_name: openhackgoa9se38poi
   build_name: POI
+  AZURE_WEBAPP_PACKAGE_PATH: '.' 
 
 on:
   push:
@@ -61,7 +62,22 @@ jobs:
           flag-name: Unit
 
 
-     
+      - name: dotnet build and publish
+        run: |
+          dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' apis/poi/web/*.csproj
+
+      - name: 'Checkout Github Action'
+        uses: actions/checkout@master
+
+      - uses: azure/docker-login@v1
+        with:
+            login-server: openhackgoa9se38acr.azurecr.io
+            username: ${{ secrets.REGISTRY_USERNAME }}
+            password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - run: |
+          docker build . -t openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}
+          docker push openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }} 
       
 
       
