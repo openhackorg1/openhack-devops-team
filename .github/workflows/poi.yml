@@ -62,10 +62,6 @@ jobs:
           flag-name: Unit
 
 
-      - name: dotnet build and publish
-        run: |
-          dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' apis/poi/web/*.csproj
-
       - name: 'Checkout Github Action'
         uses: actions/checkout@master
 
@@ -75,7 +71,7 @@ jobs:
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
       - run: |
-          docker build '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' -t openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}
+          docker build '${{ env.docker_path }}' -t openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}
           docker push openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }} 
       
 
