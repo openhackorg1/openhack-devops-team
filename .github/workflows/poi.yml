@@ -10,7 +10,8 @@ env:
   resource_group: openhackgoa9se38rg
   webapp_name: openhackgoa9se38poi
   build_name: POI
-  AZURE_WEBAPP_PACKAGE_PATH: '.' 
+  AZURE_WEBAPP_PACKAGE_PATH: '.'
+  web_app_name_staging: 
 
 on:
   push:
@@ -77,8 +78,9 @@ jobs:
       - uses: azure/webapps-deploy@v2
         with:
           app-name: '${{ env.webapp_name }}'
-          publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+          publish-profile: ${{ secrets.AZUREWEBAPPPUBLISHPROFILESTAGING }}
           images: 'openhackgoa9se38acr.azurecr.io/poi-api-dotnet:${{ github.sha }}'
+          slot-name: staging
           #test comment
 
        
