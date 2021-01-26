@@ -80,7 +80,8 @@ jobs:
       needs: build_and_test
       steps:     
       - uses: actions/checkout@v2  
-        run: docker login ${{ env.registry }} -u ${{ secrets.REGISTRY_USERNAME }} -p ${{ secrets.REGISTRY_PASSWORD }}
+        
+      - run: docker login ${{ env.registry }} -u ${{ secrets.REGISTRY_USERNAME }} -p ${{ secrets.REGISTRY_PASSWORD }}
             
       - run: |
           docker build '${{ env.docker_path }}' -t '${{ env.registry }}/${{ env.repository }}:${{ github.sha }}'
